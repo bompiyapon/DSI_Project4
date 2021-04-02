@@ -85,6 +85,8 @@ Conclusion
 - WNV outbreak are more serious in summer (high temperature) and high perciption (humidity, dewpoint, etc.)
 
 Scope for future improvements:
-- Try other ensemble models, such as using boosting , SVM
-- Ability for model to classify more than two subreddits
-- Improve the false positive value (predicted LoL as DotA)
+- Calculate distance of trap?
+- Go deep down in weather: streaks of weather like rain 7 days in a row?
+- Extend grid search for better performance
+- Change rate of train/test split (decrease test size for better model)
+- Spatial lag? of day lag
