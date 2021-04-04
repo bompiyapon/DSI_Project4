@@ -3,9 +3,8 @@ Predict West Nile virus in mosquitos across the city of Chicago
 
 ## Problem Statement
 ----------------------------
-Previously on 2005 in Sacramento Country cost approximately 
-total economic impact of WNV was $2.98 million we try to minimize number of infected and false predicting lead to increasing number of infected.
-
+WNV have effect on economic in Chicago. So, we will try to predicting WNV 
+And prevent it to maximize cost benefit for USA government. Furthermore, we will specify the factor which impact the WNV the most and when to spray in Chicago.
 
 ## Executive Summary
 ----------------------------
@@ -19,6 +18,7 @@ With the problem statement we will try to predict which trap the WNV will presen
 ----------------------------
 - WNV is highly seasonal, most occur in July and August (week21-week32)
 - WNV outbreak are more serious in summer (high temperature) and high perciption (humidity, dewpoint, etc.)
+- Spray before week 31 which WNV before it outbreak.
 
 
 ### Data Dictionary
@@ -77,16 +77,15 @@ With the problem statement we will try to predict which trap the WNV will presen
 
 ### Conclusion
 ----------------------------
-Our model correctly predicts 77.8% of the observations
-- Among posts that our model predicted, Sensitivity 92% (False Negative 161 which is have WNV but predicted not have WNV)
+Our model correctly predicts 78.2% of the observations
+- Among posts that our model predicted, Sensitivity 92% (False Negative 155 which is have WNV but predicted not have WNV)
 
 Conclusion
 - WNV is highly seasonal, most occur in July and August (week21-week32)
 - WNV outbreak are more serious in summer (high temperature) and high perciption (humidity, dewpoint, etc.)
+- Therefore, we need to spray before week 31 to maximize cost benefit.
 
 Scope for future improvements:
-- Calculate distance of trap?
-- Go deep down in weather: streaks of weather like rain 7 days in a row?
-- Extend grid search for better performance
-- Change rate of train/test split (decrease test size for better model)
-- Spatial lag? of day lag
+- Go deep down in weather: streaks of weather like rain 7 days in a row
+- Spatial area correlation is neighbor area effect.
+- Spatial time series correlation is neighbor temperature effect or not. 
